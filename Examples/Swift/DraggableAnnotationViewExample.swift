@@ -105,8 +105,12 @@ class DraggableAnnotationView: MGLAnnotationView {
             print("Ending")
             endDragging()
         case .none:
-            return
+            break
+
+        @unknown default:
+           fatalError()
         }
+
     }
 
     // When the user interacts with an annotation, animate opacity and scale changes.

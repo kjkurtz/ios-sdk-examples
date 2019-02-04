@@ -37,6 +37,8 @@ class UserTrackingModesExample_Swift: UIViewController, MGLMapViewDelegate {
             mode = .followWithCourse
         case .followWithCourse:
             mode = .none
+        @unknown default:
+            fatalError()
         }
 
         mapView.userTrackingMode = mode
@@ -46,6 +48,11 @@ class UserTrackingModesExample_Swift: UIViewController, MGLMapViewDelegate {
     // Button creation and autolayout setup
     func setupLocationButton() {
         button = UserLocationButton(buttonSize: 80)
+
+        guard let button = button else {
+            fatalError()
+        }
+
         button.addTarget(self, action: #selector(locationButtonTapped), for: .touchUpInside)
         button.tintColor = mapView.tintColor
         view.addSubview(button)
@@ -80,7 +87,7 @@ class UserLocationButton: UIButton {
         let arrow = CAShapeLayer()
         arrow.path = arrowPath()
         arrow.lineWidth = 2
-        arrow.lineJoin = kCALineJoinRound
+        arrow.lineJoin = CAShapeLayerLineJoin.round
         arrow.bounds = CGRect(x: 0, y: 0, width: buttonSize / 2, height: buttonSize / 2)
         arrow.position = CGPoint(x: buttonSize / 2, y: buttonSize / 2)
         arrow.shouldRasterize = true
@@ -131,6 +138,8 @@ class UserLocationButton: UIButton {
             updateArrow(fillColor: activePrimaryColor, strokeColor: activePrimaryColor, rotation: rotatedArrow)
         case .followWithCourse:
             updateArrow(fillColor: activePrimaryColor, strokeColor: activePrimaryColor, rotation: 0)
+        @unknown default:
+            fatalError()
         }
     }
 
