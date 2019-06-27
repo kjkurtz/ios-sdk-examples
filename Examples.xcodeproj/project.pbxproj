@@ -1268,15 +1268,15 @@
 				"${PODS_ROOT}/Target Support Files/Pods-Examples/Pods-Examples-frameworks.sh",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
-				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/E3F066DB-FB3F-3DB3-ADCA-FD22D28B3593.bcsymbolmap",
-				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/314B394E-4B8A-3249-ACB5-C8B038156249.bcsymbolmap",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/8D852F18-6447-38AF-9DA3-C3CE71848EB0.bcsymbolmap",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/72E9F09F-BE40-3DD9-AA76-FF82406B332C.bcsymbolmap",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
 				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
-				"${BUILT_PRODUCTS_DIR}/E3F066DB-FB3F-3DB3-ADCA-FD22D28B3593.bcsymbolmap",
-				"${BUILT_PRODUCTS_DIR}/314B394E-4B8A-3249-ACB5-C8B038156249.bcsymbolmap",
+				"${BUILT_PRODUCTS_DIR}/8D852F18-6447-38AF-9DA3-C3CE71848EB0.bcsymbolmap",
+				"${BUILT_PRODUCTS_DIR}/72E9F09F-BE40-3DD9-AA76-FF82406B332C.bcsymbolmap",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
